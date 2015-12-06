@@ -1,0 +1,28 @@
+{
+  "name": "betterheaders",
+  "version": "1.0.0",
+  "description": "Everyday headers I love you, but you're bringing me down",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipebernardes/betterheaders.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "felipebernardes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipebernardes/betterheaders/issues"
+  },
+  "homepage": "https://github.com/felipebernardes/betterheaders#readme",
+  "devDependencies": {
+    "bower": "^1.6.9",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0"
+  }
+}

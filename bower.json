@@ -1,0 +1,24 @@
+{
+  "name": "betterheaders",
+  "description": "Everyday headers I love you, but you're bringing me down",
+  "main": "index.js",
+  "authors": [
+    "felipebernardes"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "css"
+  ],
+  "homepage": "https://github.com/felipebernardes/betterheaders",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "~3.0.3"
+  }
+}
