@@ -11,7 +11,6 @@ body {
   background-repeat: no-repeat; }
 
 header {
-  color: #fafafa;
   position: relative;
   height: 100vh;
   width: 100vw; }
@@ -22,9 +21,26 @@ header {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 180, 80, 0.05);
+    background-color: rgba(0, 80, 180, 0.5);
+    background: #ff6b6b;
+    background: -moz-linear-gradient(left, #ff6b6b 0%, #556270 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #ff6b6b), color-stop(100%, #556270));
+    background: -webkit-linear-gradient(left, #ff6b6b 0%, #556270 100%);
+    background: -o-linear-gradient(left, #ff6b6b 0%, #556270 100%);
+    background: -ms-linear-gradient(left, #ff6b6b 0%, #556270 100%);
+    background: linear-gradient(to right, #ff6b6b 0%, #556270 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6b6b', endColorstr='#556270', GradientType=1 );
+    opacity: 0.66;
     z-index: -1; }
 
 h1 {
   margin: 0;
-  font-size: 17rem; }
+  color: #FFF;
+  padding-left: 5vw;
+  font-size: 14vw;
+  background: url("../img/words.jpg");
+  background-size: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.8);
+  position: relative; }
