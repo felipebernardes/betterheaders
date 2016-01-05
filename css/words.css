@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px; }
+
+body {
+  background-image: url("../img/words.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+header {
+  color: #fafafa;
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+  header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 180, 80, 0.05);
+    z-index: -1; }
+
+h1 {
+  margin: 0;
+  font-size: 17rem; }

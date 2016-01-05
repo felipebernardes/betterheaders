@@ -18,7 +18,8 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "normalize-scss": "~3.0.3"
+  "devDependencies": {},
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
   }
 }
