@@ -34,28 +34,76 @@ header {
   }
 }
 
+$offset: -20px;
+$count: 8;
+$duration: 7;
+
+@keyframes wave {
+  from { transform: translateY(0); }
+  to   { transform: translateY( $offset ); }
+}
+
 h1 {
   margin: auto;
   color: #FFF;
   font-size: 24vmax;
   line-height: 12vmax;
-  letter-spacing: 1rem;
+  letter-spacing: -3.5rem;
   background-size: center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0,0,0,.8);
-  position: relative;
 
-  &:after {
-    content: 'seabass';
-    position: absolute;
-    left: 2vmax;
-    bottom: -1vmax;
-    opacity: .5;
+  span {
+    display: inline-block;
+    animation-duration: #{$duration}s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        left: 2vmax;
+        bottom: -1vmax;
+        opacity: 0.5;
+    }
+
+    &:nth-of-type(1):after {
+      content: 's';
+    }
+
+    &:nth-of-type(2):after {
+      content: 'e';
+    }
+
+    &:nth-of-type(3):after {
+      content: 'a';
+    }
+
+    &:nth-of-type(4):after {
+      content: 'b';
+    }
+
+    &:nth-of-type(5):after {
+      content: 'a';
+    }
+
+    &:nth-of-type(6):after {
+      content: 's';
+    }
+
+    &:nth-of-type(7):after {
+      content: 's';
+    }
   }
+
 }
 
-@keyframes wave {
-  from { transform : translateY(0); }
-  to   { transform : translateY(-5vmax); }
+@for $i from 0 to $count {
+  h1 :nth-child( #{$count}n + #{$i} ) {
+      /*animation-delay: -#{($count - $i) * 2 * $duration / $count }s;*/
+      animation-delay: #{$i}s;
+  }
 }
