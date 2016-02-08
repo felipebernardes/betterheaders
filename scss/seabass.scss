@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lobster', cursive;
+  font-size: 16px;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1415638424454-36a7d12ae941?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=577f8af4c4dd67cd54c65a8c0910199c');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #5f2c82; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.66;
+    z-index: -1;
+  }
+}
+
+h1 {
+  margin: auto;
+  color: #FFF;
+  font-size: 24vmax;
+  line-height: 12vmax;
+  letter-spacing: 1rem;
+  background-size: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,.8);
+  position: relative;
+
+  &:after {
+    content: 'seabass';
+    position: absolute;
+    left: 2vmax;
+    bottom: -1vmax;
+    opacity: .5;
+  }
+}
+
+@keyframes wave {
+  from { transform : translateY(0); }
+  to   { transform : translateY(-5vmax); }
+}
